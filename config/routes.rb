@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root "pages#home"
   # the words after # is simply the action/method on the controller to the left of the #
   get "about", to: "pages#about"
-  resources :articles, only: [:show, :index, :new, :create]
+  resources :articles, only: [:show, :index, :new, :create, :edit, :update]
 end
