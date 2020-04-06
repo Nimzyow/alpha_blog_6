@@ -7,7 +7,7 @@ ruby '2.6.3'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 
 # Use Puma as the app server
-
+gem "pg"
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
@@ -53,7 +53,7 @@ group :test do
 end
 
 group :production do
-gem "pg"
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
